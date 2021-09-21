@@ -5,9 +5,9 @@ pages:
   script:
   - echo 'Nothing to do...'
   - cd public/deb/
-  - echo "<html><body><div align=\"center\"><h1>Archive of BookThief+Liesel versions</h1><br><h3>Directory Listing:</h3><br><br></div>" > ./index.html
-  - find -exec echo "<a href='{}'>{}</a><br>" \; >> ./index.html
-  - echo "</body></html>" >> ./index.html
+  - echo "<html><body><div align=\"center\"><h1>Archive of BookThief+Liesel versions</h1><br><h3>Directory Listing:</h3><br><br>" > ./index.html
+  - for i in `ls`; do if [ $i == 'index.html' ]; then   echo "skipping.."; else   space=" ";   nothing="";   filetitle="${i/_amd64/$nothing}";   filetitle="${filetitle/.deb/$nothing}";   filetitle="${filetitle/_/$space}";   filetitle="${filetitle/-/$space}"   echo "<a href='$i'>$filetitle</a><br>" >> ./index.html; fi; done
+  - echo "</div></body></html>" >> ./index.html
   artifacts:
     paths:
     - public
