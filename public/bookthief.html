@@ -8,6 +8,33 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 700%;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
 </style>
 
 <body class="w3-light-grey">
@@ -87,7 +114,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
     sudo apt-get update<br>
     sudo apt-get install bookthief</i></b></p>
 	  <p>Alternatively, the two .deb package files for BookThief and Liesel (BookThief's core component) can be downloaded here:<br>
-    <a href="https://rail5.org/deb/bookthief_5.2_amd64.deb">BookThief</a> and <a href="https://rail5.org/deb/liesel_5.2.1_amd64_ubuntu.deb">Liesel</a></p>
+    <a href="https://rail5.org/deb/bookthief_5.2_amd64.deb">BookThief</a>, <a href="https://rail5.org/deb/liesel_5.2.2_amd64_ubuntu.deb">Liesel (Ubuntu)</a> and <a href="https://rail5.org/deb/liesel_5.2.2_amd64_debian.deb">Liesel <div class="tooltip">(Debian)</a> ?<span class="tooltiptext">Debian and Ubuntu package different versions of the <i>PoDoFo library</i><br>The Debian package is linked to 0.9.7, and the Ubuntu package is linked to 0.9.6</span></div></p>
     <br><br>
     <div align="center">Some example PDFs prepared with BookThief:</div><br>
         <div style="width:50%; float:left;">
