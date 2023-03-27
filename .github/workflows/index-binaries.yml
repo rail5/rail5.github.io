@@ -12,6 +12,9 @@ jobs:
           ls ${{ github.workspace }} >> $GITHUB_OUTPUT
           ls ${{ github.workspace }}/../ >> $GITHUB_OUTPUT
           echo "$EOF" >> $GITHUB_OUTPUT
+          echo "why do I see no output at all"
+          ls
+          ls /
   create-pages:
     runs-on: ubuntu-latest
     steps:
