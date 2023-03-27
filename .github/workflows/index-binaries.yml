@@ -7,8 +7,11 @@ jobs:
     steps:
       - name: List files in the repository
         run: |
+          EOF=$(dd if=/dev/urandom bs=15 count=1 status=none | base64)
+          echo "text<<$EOF" >> $GITHUB_OUTPUT
           ls ${{ github.workspace }} >> $GITHUB_OUTPUT
           ls ${{ github.workspace }}/../ >> $GITHUB_OUTPUT
+          echo "$EOF" >> $GITHUB_OUTPUT
   create-pages:
     runs-on: ubuntu-latest
     steps:
