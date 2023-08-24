@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<title>rail5</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://rail5.org/w3.css">
+<link rel='stylesheet' href='https://rail5.org/roboto.css'>
+<link rel="stylesheet" href="https://rail5.org/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+
+#code {
+	width: 100%;
+	white-space: nowrap;
+	background-color: #edebec;
+	overflow-x: auto;
+}
+
+</style>
+
+<body class="w3-light-grey">
+
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+  
+	<!-- Left Column -->
+	<div class="w3-third">
+	
+	  <div class="w3-white w3-text-grey w3-card-4">
+		<div class="w3-display-container">
+		  <a href="https://rail5.org"><img src="images/av.webp" style="width:100%" alt="Avatar">
+		  <div class="w3-display-bottomleft w3-container w3-text-black">
+			<h2><font color="#FFFFFF">Andrew S. Rightenburg</font></h2>
+		  </div></a>
+		</div>
+		<div class="w3-container">
+		  <p><img src="images/icons/briefcase.webp" width="16px" height="16px"><i class="w3-margin-right w3-large w3-text-teal"></i>V.O. Artist / Narrator / Audio Specialist</p>
+		  <p><img src="images/icons/mail.webp" width="16px" height="16px"><i class="w3-margin-right w3-large w3-text-teal"></i>andrew@rail5.org</p>
+		  <p><img src="images/icons/lock.webp" width="16px" height="16px"><i class="w3-margin-right w3-large w3-text-teal"></i><small><a href="pgpkey.txt">ED15 6E8B C6F9 1636 676A 77AA A0CB 570A B662 9159</a></small></p>
+		</div>
+	  </div><br>
+
+	<!-- End Left Column -->
+	</div>
+
+	<!-- Right Column -->
+	<div class="w3-twothird">
+	
+	  <div class="w3-container w3-card w3-white w3-margin-bottom">
+		<h2 class="w3-text-grey w3-padding-16"><img src="images/icons/print.webp" width="32px" height="32px"><i class="w3-margin-right w3-xxlarge w3-text-teal"></i>BookThief</h2>
+		<div class="w3-container">
+
+		  <p><h3>Downloads are at the <a href="#download">bottom of this page</a></h3></p>
+
+		  <p>I struggle with e-books -- I can't focus on them; if I'm going to read something, then, generally speaking, I need it in print.</p>
+		  <p>So, I made a free program <i>(libre <strong>y</strong> gratis)</i> called BookThief. It's nothing too special:</p>
+		  
+		  <div style="width:50%; float:left;">
+		  <img src="images/bookthief-screenshot2.webp" width="90%" height="20%">
+		  </div>
+		  
+		  <div style="margin-left:50%;">
+		  <img src="images/bookthief-screenshot1.webp" width="90%" height="20%">
+	  </div>
+	<br>
+	  
+	  <div style="width:50%; float:left;">
+	  It takes an inputted, ordinary PDF<br><br>
+	  <img src="images/bookthief-before.webp" width="75%" height="20%">
+		  </div>
+		  
+		  <div style="margin-left:50%;">
+		   and arranges / transforms it for "pamphlet"-style home-printing<br><br>
+		  <img src="images/bookthief-after.webp" width="90%" height="40%">
+	  </div>
+	  
+	  </div>
+	  <p>When it prints, you just fold the whole stack of papers in half, and there's your booklet/pamphlet.</p>
+	  
+	  <div style="width:50%; float:left;">
+	  <img src="images/bookthief-print1.webp" width="90%" height="20%">
+		  </div>
+		  
+		  <div style="margin-left:50%;">
+		  <img src="images/bookthief-print2.webp" width="90%" height="20%">
+	  </div>
+	  
+	  <div id="download">
+	  <h1>Downloads</h1>
+	  <p>BookThief is <a href="https://github.com/rail5" target="_blank">free & open-source</a> software</p>
+	  
+	<h2>Windows</h2>
+	<p>Windows users can <a href="https://github.com/rail5/bookthief/releases/download/v11.2.3/BookThief-11.2.3-Installer.exe">click here to download the Windows installer</a></p>
+
+	<h2>GNU/Linux</h2>
+	
+	<p>Users of <b><u>Debian GNU/Linux</u></b> can easily install BookThief via the <a href="https://deb.rail5.org">deb.rail5.org</a> repository:<br>
+	<div id="code">
+		<code>sudo curl -s -o /etc/apt/trusted.gpg.d/rail5.gpg "https://deb.rail5.org/rail5.gpg"<br>
+		sudo curl -s -o /etc/apt/sources.list.d/rail5.list "https://deb.rail5.org/debian/rail5.list"<br>
+		sudo apt update<br>
+		sudo apt install bookthief</code>
+	</div>
+	</p>
+	
+	<h2>Source Code</h2>
+	
+	<p>The source code (and more information) is <a href="https://github.com/rail5/bookthief">available on Github.</a></p>
+	
+	</div>
+	<br><br>
+	<div align="center">Some example PDFs prepared with BookThief:</div><br>
+		<div style="width:50%; float:left;">
+		<b>The Tricontinental Institute for Social Research</b><br>
+		<i>Serve the People: The Eradication of Extreme Poverty in China</i><br><br>
+		<a href="https://rail5.org/bt/20210719_Study-Alleviation-of-poverty_EN_Web-1.pdf">Original PDF</a><br><br><a href="https://rail5.org/bt/bt-tricontinental-study.pdf">BookThief version to be home-printed as a booklet</a>
+	</div>
+									 
+	<div style="margin-left:50%;">
+
+	  <b>Fyodor Dostoyevsky</b><br>
+	  <i>Crime and Punishment</i><br><br>
+	  <a href="https://rail5.org/bt/crime-and-punishment.pdf">Original PDF</a><br><br><a href="https://rail5.org/bt/bookthief-crime and punishment.zip">BookThief version to be home-printed as multiple booklets<br>(40-page segments)</a></div>
+
+	</div>
+
+
+	  </div>
+
+
+
+
+	  </div>
+
+
+	</div>
+	<!-- End Right Column -->
+
+	
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
+
+<footer class="w3-container w3-teal w3-center w3-margin-top">
+  <p>Contact me and find samples of my work on various platforms:</p>
+  <a href="https://www.acx.com/narrator?p=A2EKKHAI6O4BQQ" target="_blank">Audible ACX</a> &middot; <a href="https://voice123.com/voice-actor/andrewrightenburg" target="_blank">Voice123</a>
+  <p>This website is <i>free of cookies and javascript</i></p>
+</footer>
+
+</body>
+</html>
+
+
+
