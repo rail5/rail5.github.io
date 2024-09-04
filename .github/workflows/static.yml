@@ -1,4 +1,5 @@
 # Simple workflow for deploying static content to GitHub Pages
+# Unmodified default configuration
 name: Deploy static content to Pages
 
 on:
