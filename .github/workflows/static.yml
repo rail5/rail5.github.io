@@ -32,6 +32,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          lfs: true
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
@@ -39,7 +41,6 @@ jobs:
         with:
           # Upload entire repository
           path: '.'
-          lfs: true
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
