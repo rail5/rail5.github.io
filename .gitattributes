@@ -26,5 +26,5 @@ bt/bt-tricontinental-study.pdf filter=lfs diff=lfs merge=lfs -text
 bt/crime-and-punishment.pdf filter=lfs diff=lfs merge=lfs -text
 bt/20210719_Study-Alleviation-of-poverty_EN_Web-1.pdf filter=lfs diff=lfs merge=lfs -text
 bt/bookthief-crime[[:space:]]and[[:space:]]punishment.zip filter=lfs diff=lfs merge=lfs -text
-autobuild/autobuild-web-mobile-repository-menu.png filter=lfs diff=lfs merge=lfs -text
 autobuild/autobuild-web-repository-menu.png filter=lfs diff=lfs merge=lfs -text
+autobuild/autobuild-web-mobile-repository-menu.jpeg filter=lfs diff=lfs merge=lfs -text
