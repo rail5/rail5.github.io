@@ -1,115 +1,94 @@
 <!DOCTYPE html>
-<html>
-<title>rail5</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://rail5.org/w3.css">
-<link rel='stylesheet' href='https://rail5.org/roboto.css'>
-<link rel="stylesheet" href="https://rail5.org/font-awesome.min.css">
-<style>
-html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
-</style>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>rail5</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="page">
+		<main class="card">
+	<section class="band">
+		<header class="header">
+			<img src="images/av.webp" alt="Andrew S. Rightenburg" class="headshot">
+			<div class="identity">
+				<h1>Andrew S. Rightenburg</h1>
+				<p class="role">Software Engineer</p>
+			</div>
+		</header>
 
-<body class="w3-light-grey">
+		<p class="blurb">
+			I write the kind of software that needs to be reliable and boring.
+			<br>
+			If I do my job well, you shouldn't notice it.
+		</p>
+	</section>
 
-<!-- Page Container -->
-<div class="w3-content w3-margin-top" style="max-width:1400px;">
+	<section class="band band--alt">
+		<h2 class="section-title">Contact</h2>
+		<ul class="contact-list">
+			<li>andrew@rail5.org</li>
+			<li><small><a href="pgpkey.txt">9C5D 1694 A60E 9C1D 2397 7858 6F20 404A 58BE 4809</a>
+  <span class="tooltip">?
+    <span class="tooltiptext">This is my PGP key. It lets you send me encrypted messages.</span>
+  </span>
+  </small></li>
+		</ul>
+	</section>
 
-	<!-- The Grid -->
-	<div class="w3-row-padding">
-	
-	<!-- Left Column -->
-	<div class="w3-third">
-	
-	<div class="w3-white w3-text-grey w3-card-4">
-		<div class="w3-display-container">
-			<img src="images/av.webp" style="width:100%" alt="Avatar">
-			<div class="w3-display-bottomleft w3-container w3-text-black">
-				<h2><font color="#FFFFFF">Andrew S. Rightenburg</font></h2>
+	<section class="band">
+		<h2 class="section-title">Free Software</h2>
+		<p class="blurb">
+			I also maintain a few free software projects, mostly written in C++.
+		</p>
+		<ul class="project-list">
+		<li>
+			<span class="project-link"><a href="https://github.com/rail5">github.com/rail5</a></span>
+			<span class="project-desc">My projects</span>
+		</li>
+		<li>
+			<span class="project-link"><a href="https://deb.rail5.org">deb.rail5.org</a></span>
+			<span class="project-desc">My personal Debian package repository</span>
+		</li>
+		<li>
+			<span class="project-link"><a href="https://bpp.sh">Bash++</a></span>
+			<span class="project-desc">Bash with classes</span>
+		</li>
+		<li>
+			<span class="project-link"><a href="https://github.com/rail5/polonius">Polonius</a></span>
+			<span class="project-desc">Text editor for extremely large files</span>
+		</li>
+		<li>
+			<span class="project-link"><a href="https://github.com/rail5/autobuild">Autobuild</a></span>
+			<span class="project-desc">Automatically build & distribute Debian packages</span>
+		</li>
+		<li>
+			<span class="project-link"><a href="https://github.com/rail5/xgetopt">XGetOpt</a></span>
+			<span class="project-desc">Header-only C++20 command-line option parsing library</span>
+		</li>
+		<li>
+			<span class="project-link"><a href="https://github.com/rail5/bookthief">BookThief</a></span>
+			<span class="project-desc">Converts PDFs to booklets for DIY printing</span>
+		</li>
+		<li>
+			<span class="project-link"><a href="https://github.com/rail5/antisocial">AntiSocial</a></span>
+			<span class="project-desc">Hides "social media" features on certain websites</span>
+		</li>
+		</ul>
+	</section>
+		</main>
+	</div>
+
+	<footer class="site-footer">
+		<div class="site-footer-inner footer">
+			<div class="footer-left">This website is free of cookies and javascript.</div>
+			<div class="liberapay-slot">
+				<a href="https://liberapay.com/rail5/donate">
+					<img alt="Donate" src="https://liberapay.com/assets/widgets/donate.svg">
+				</a>
 			</div>
 		</div>
-		<div class="w3-container">
-			<p><img src="images/icons/briefcase.webp" width="16px" height="16px"><i class="w3-margin-right w3-large w3-text-teal"></i>V.O. Artist / Narrator / Audio Specialist</p>
-			<p><img src="images/icons/mail.webp" width="16px" height="16px"><i class="w3-margin-right w3-large w3-text-teal"></i>andrew@rail5.org</p>
-		<p><img src="images/icons/lock.webp" width="16px" height="16px"><i class="w3-margin-right w3-large w3-text-teal"></i><small><a href="pgpkey.txt">9C5D 1694 A60E 9C1D 2397 7858 6F20 404A 58BE 4809</a></small></p>
-		</div>
-	</div><br>
-
-	<!-- End Left Column -->
-	</div>
-
-	<!-- Right Column -->
-	<div class="w3-twothird">
-	
-	<div class="w3-container w3-card w3-white w3-margin-bottom">
-		<h2 class="w3-text-grey w3-padding-16"><img src="images/icons/suitcase.webp" width="32px" height="32px"><i class="w3-margin-right w3-xxlarge w3-text-teal"></i>Free Stuff</h2>
-		<div align="center"><h3 class="w3-text-grey">Audio</h2></div>
-		<div class="w3-container">
-			<h5 class="w3-opacity"><b><a href="https://www.youtube.com/c/AndrewSRightenburg/">Public Domain Audiobooks</a></b></h5>
-			<p>I spend most of my free time reading old books anyway, why not record some of them? Many of them have been heavily ignored by producers, <a href="https://www.youtube.com/c/AndrewSRightenburg/">so I try and do something about it.</a></p>
-			<div align="center" style="width: 50%; margin-left: 25%;"><hr></div>
-		<p>If you'd like to donate to this end, you can do so through PayPal</p>
-	<!-- begin paypal button !-->
-<div align="center">
-
-<form action="https://www.paypal.com/donate" method="post" target="_top" class="donate">
-<input type="hidden" name="hosted_button_id" value="QBLFS93ZZ5VU2" />
-<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
-</form>
-
-
-</div>
-
-	<!-- end paypal button !-->
-	<hr>
-	</div>
-
-	<div align="center"><h3 class="w3-text-grey">Software</h2></div>
-
-	<div class="w3-container">
-		<div style="width:50%; float:left;">
-			<h5 class="w3-opacity"><b><a href="https://github.com/rail5" target="_blank">Github</a></b></h5>
-			<p>My programs on Github</p>
-		</div>
-		<div style="margin-left:50%;">
-			<h5 class="w3-opacity"><b><a href="https://bpp.sh">Bash++</a></b></h5>
-			<p>The Bourne-Again Shell with classes</p>
-		</div>
-	</div>
-
-	</div>
-
-
-	<div class="w3-container w3-card w3-white w3-margin-bottom">
-		<h2 class="w3-text-grey w3-padding-16"><img src="images/icons/money.webp" width="32px" height="32px"><i class="w3-margin-right w3-xxlarge w3-text-teal"></i>Non-Free Stuff</h2>
-		<div class="w3-container">
-			<h5 class="w3-opacity"><b><a href="mailto:andrew@rail5.org">Hire Me</a></b></h5>
-			<p>You can hire me to provide <b>voice-over</b>, <b>narration</b>, <b>soundscaping</b>, <b>musical composition</b>, or <b>audio engineering</b> services</a></p>
-		 <p>Contact me with any requests and details about your project</p>
-	</div>
-
-
-	</div>
-
-
-	</div>
-	<!-- End Right Column -->
-
-	
-	<!-- End Grid -->
-	</div>
-	
-	<!-- End Page Container -->
-</div>
-
-<footer class="w3-container w3-teal w3-center w3-margin-top">
-	<p>Contact me and find samples of my work on various platforms:</p>
-	<a href="https://www.acx.com/narrator?p=A2EKKHAI6O4BQQ" target="_blank">Audible ACX</a> &middot; <a href="https://voice123.com/voice-actor/andrewrightenburg" target="_blank">Voice123</a>
-	<p>This website is <i>free of cookies and javascript</i></p>
-</footer>
-
+	</footer>
 </body>
 </html>
-
-
